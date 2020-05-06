@@ -1,0 +1,24 @@
+/**
+ * Name: Mark Danez Ricalde
+ * UCID: 10171889
+ * Tutorial section: B02
+ */
+
+.home {
+    display: flex;
+    margin-top: 40px;
+}
+
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.smaller {
+    width: 20%;
+    margin-left: 40%;
+}
+
+.button {
+margin: 10px 10px 10px 10px;
+}

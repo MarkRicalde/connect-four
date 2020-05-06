@@ -1,0 +1,65 @@
+/**
+ * Name: Mark Danez Ricalde
+ * UCID: 10171889
+ * Tutorial section: B02
+ */
+
+.Game {
+  text-align: center;
+}
+
+.board {
+  width: 900px;
+  margin: auto;
+  padding: 8px;
+}
+
+.board[game-theme='classic']{
+  background-color: #3ca3ff;
+}
+
+.board[game-theme='christmas']{
+  background-color: #d7fffe;
+}
+
+.board[game-theme='vaporwave']{
+  background-color: #ff71ce;
+}
+
+.board > .cell {
+  width: calc(800px / 7 - 8px);
+  height: calc(800px / 7 - 8px);
+  background: white;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+.board > .cell[data-player = 'playerOne'][game-theme = 'christmas'] {
+  background-color: #00FF00;
+}
+
+.board > .cell[data-player = 'playerTwo'][game-theme = 'christmas']{
+  background-color: #FF0000;
+}
+
+.board > .cell[data-player = 'playerOne'][game-theme = 'classic'] {
+  background-color: yellow;
+}
+
+.board > .cell[data-player = 'playerTwo'][game-theme = 'classic']{
+  background-color: red;
+}
+
+.board > .cell[data-player = 'playerOne'][game-theme = 'vaporwave'] {
+  background-color: #01cdfe;
+}
+
+.board > .cell[data-player = 'playerTwo'][game-theme = 'vaporwave']{
+  background-color: #05ffa1;
+}
+
+.button {
+  margin: 10px 10px 10px 10px;
+}
